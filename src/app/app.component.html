@@ -1,24 +1,5 @@
-<div class="container">
-    <div class="row">
-        
-      <div class="col-md-8" id="htmlData">
-        <div class="col-md-3 text-right">
-            <button class="btn btn-warning btn-block center" (click)="openPDF()">Download PDF</button>
-          </div>
-        <table class="table table-striped-columns">
-          <tr class="table-primary">
-            <th>Id</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-          </tr>
-          <tr *ngFor="let user of USERS">
-            <th>{{user.id}}</th>
-            <td>{{user.name}}</td>
-            <td>{{user.email}}</td>
-            <td>{{user.phone}}</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
+<app-header></app-header>
+<router-outlet></router-outlet>
+<div class="fixed-bottom">
+    <app-footer></app-footer>
+</div>
